@@ -23,6 +23,7 @@ connectDB();
 
 // api endpoints
 app.use("/api/food", foodRouter)
+app.use("/images",express.static('uploads'))
 
 
 app.get("/",(req,res)=> {
@@ -30,6 +31,6 @@ app.get("/",(req,res)=> {
 })
 
 app.listen(port,()=>{
-    console.log(`Server Started on http:localhost:${port}`)
+    console.log(`Server Started on http://localhost:${port}`)
 })
 
