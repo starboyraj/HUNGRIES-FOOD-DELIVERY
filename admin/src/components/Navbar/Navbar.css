@@ -1,10 +1,14 @@
-.logo {
-  position: absolute;   /* ya fixed, neeche explain kiya */
-  top: 20px;
-  left: 20px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%; 
+}
 
-  width: 140px;         /* size control */
-  height: auto;
+.navbar .logo {
+    width: max(10%, 80px);
+}
 
-  cursor: pointer;
+.navbar .profile{
+    width: 40px;
 }
